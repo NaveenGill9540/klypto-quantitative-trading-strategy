@@ -1,0 +1,31 @@
+Quantitative Trading Strategy – Klypto Assessment
+
+This project is part of the technical assessment for the Machine Learning Engineer role at Klypto Pvt. Ltd.
+
+Objective
+The objective of this project is to build a basic end-to-end quantitative trading pipeline that combines data processing, feature engineering, regime detection, trading strategy logic, and machine learning.
+
+Project Overview
+The project uses historical NIFTY market data to simulate a 5-minute trading environment. Technical indicators, options-based features, and volatility measures are engineered and used to detect market regimes using a Hidden Markov Model (HMM).
+
+A simple EMA crossover strategy is implemented and filtered using detected market regimes. Machine learning (XGBoost) is then applied as an additional confirmation layer for trade filtering.
+
+Data Handling
+Due to API access limitations, publicly available historical data is used. Futures and options data are simulated and aligned with spot prices to focus on feature behavior and strategy logic rather than exact market replication.
+
+Project Structure
+- data/: CSV files used across the project
+- notebooks/: Jupyter notebooks for each project stage
+- models/: Saved ML models
+- plots/: Visualizations
+- results/: Performance outputs
+
+Key Techniques Used
+- EMA-based technical indicators
+- Options-based features (IV, PCR)
+- Hidden Markov Model for regime detection
+- Rule-based trading strategy
+- XGBoost for ML-based trade filtering
+
+Notes
+This project is designed for learning and demonstration purposes. The emphasis is on clarity, explainability, and structured thinking rather than production-level trading performance.
